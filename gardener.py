@@ -21,8 +21,8 @@ import pyutil
 client = pymongo.MongoClient(
     "mongodb://localhost:27017/")
 
-db = client.testdb # client . your db name
-posts = db.testcollection  # db . your colection Name
+db = client.Candy # client . your db name
+posts = db.candies  # db . your colection Name
 
 def cls():
     os.system('cls' if os.name=='nt' else 'clear')
@@ -108,7 +108,7 @@ def menu():
     print(custom_fig.renderText('gardener '))
     print("by sabrey")
     print("_______________________________________________")
-    print("1-Search mail in branches \n2-Search password in branch\n3-Fast mail search(really fast.exact value) \n4-Fast pass search(really fast.exact value)\n5-Load branch file to database \n6-Load branch to database from directory \n7-exit")
+    print("1-Search mail in branch \n2-Search password in branch\n3-Fast mail search(really fast.exact value) \n4-Fast pass search(really fast.exact value)\n5-Load branch file to database \n6-Load branch files to database from directory \n7-exit")
     choice = input("choice : ")
 
     if choice == '1':
